@@ -21,4 +21,4 @@ def load_clean_XY(fpath_X, fpath_Y):
   comb_df = y_df.merge(X_df).drop(columns=drop_cols)
 
   # returns X & y
-  return comb_df.drop(columns=['status_group', 'needs_repair']), comb_df.needs_repair
+  return comb_df.drop(columns=['status_group', 'needs_repair']), comb_df.needs_repair, comb_df
